@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Log In Form</h2>
+    <button onclick="login()">Log in</button>
+    <div class="bgd" id="myLogin">
+
+    <div class="container animate">
+        <div class="header">
+            <span class="close" onclick="cl()">&times;</span>
+            <img src="https://static.runoob.com/images/mix/img_avatar.png">
+        </div>
+        
+        <form action="" class="info">
+            <label><b>Username</b></label>
+            <input type="text" class="input" placeholder="Enter Username">
+            <label><b>Password</b></label>
+            <input type="text" class="input" placeholder="Enter Password">
+            <input type="button" class="input login" value="login">
+            <input type="checkbox" class="checkbox" checked="checked">Remember me
+        </form>
+
+        <div class="footer">
+            <button onclick="cl()">cancle</button>
+            <span>Forget <a href="#">password?</a></span>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

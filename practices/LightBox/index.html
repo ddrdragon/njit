@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightBox</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" ></script>
+</head>
+<body>
+    <h1 style="text-align: center;">LightBox</h1>
+    <div class="row">
+        <div class="column">
+            <img src="demo1.jpg" onclick="openModal(0)">
+        </div>
+        <div class="column">
+            <img src="demo2.jpg" onclick="openModal(1)">
+        </div>
+        <div class="column">
+            <img src="demo3.jpg" onclick="openModal(2)">
+        </div>
+        <div class="column">
+            <img src="demo4.jpg" onclick="openModal(3)">
+        </div>
+    </div>
+
+    <div class="modal" id="myModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="pics">
+                <div class="num">1 / 4</div>
+                <img src="demo1.jpg">
+            </div>
+            <div class="pics">
+                <div class="num">2 / 4</div>
+                <img src="demo2.jpg">
+            </div>
+            <div class="pics">
+                <div class="num">3 / 4</div>
+                <img src="demo3.jpg">
+            </div>
+            <div class="pics">
+                <div class="num">4 / 4</div>
+                <img src="demo4.jpg">
+            </div>
+        
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+            <div class="desc"><p id="ddd">description</p></div>
+            
+            <div class="column">
+                <img class="demo" src="demo1.jpg" alt="1st pic" onclick="showSlide(0)">
+            </div>
+            <div class="column">
+                <img class="demo" src="demo2.jpg" alt="2nd pic" onclick="showSlide(1)">
+            </div>
+            <div class="column">
+                <img class="demo" src="demo3.jpg" alt="3rd pic" onclick="showSlide(2)">
+            </div>
+            <div class="column">
+                <img class="demo" src="demo4.jpg" alt="4th pic" onclick="showSlide(3)">
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

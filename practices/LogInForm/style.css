@@ -1,0 +1,124 @@
+* {box-sizing: border-box;}
+
+.container {
+  background-color: white;
+  border: solid;
+  border-width: 1px;
+  width: 80%;
+  margin: auto;
+  max-width: 600px;
+}
+
+.header {
+  /* border: solid red; */
+  position: relative;
+}
+
+.header .close {
+  /* border: solid; */
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.header .close:hover {
+  cursor: pointer;
+  color: red;
+}
+
+img {
+  position: relative;
+  top: 10px;
+  height: 150px;
+  width: auto;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.info {
+  /* border: solid; */
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.info label {
+  display: block;
+  margin: 5px 0;
+}
+
+.info .input {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  padding: 5px 15px;
+}
+
+.info .login {
+  background-color: rgb(42, 184, 42);
+  border-style: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.info .login:hover {
+  cursor: pointer;
+  background-color: rgb(147, 211, 147);
+}
+
+.footer {
+  background-color: rgb(238, 238, 238);
+  height: 75px;
+  position: relative;
+}
+
+.footer button {
+  background-color: rgb(252, 94, 73);
+  border-style: none;
+  color: white;
+  padding: 10px 15px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  border-radius: 3px;
+}
+
+.footer button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 146, 131);
+}
+
+.footer span {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+
+.bgd {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.animate {
+  animation: myZoom 0.6s;
+  /* -webkit-animation: myZoom 0.6s; */
+}
+
+@keyframes myZoom{
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+/* @-webkit-keyframes myZoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+} */
