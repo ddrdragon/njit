@@ -9,6 +9,12 @@
 
     <title>Xiaotong Ding</title>
 
+    <script>
+        function displayDate(){
+            document.getElementById("demo").innerHTML=Date();
+        }
+    </script>
+
     <!-- Bootstrap Core CSS -->
     <link href="frontPage/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -59,13 +65,16 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-text">
-                        <span class="name">Hi! I'm Xiaotong Ding</span>
+                        <span class="name">Hi! I'm Xiaotong Dingggggg</span>
                         <hr class="star-light">
                         <span class="skills">
                             This is my personal website, I'll keep updating.
                             <br>
                             Come to see me often.
                         </span>
+                        <p id="demo">这是一个段落</p>
+
+                        <button type="button" onclick="displayDate()">显示日期</button>
                     </div>
                 </div>
             </div>
